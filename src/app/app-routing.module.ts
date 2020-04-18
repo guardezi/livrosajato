@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AngularFireAuthGuard,hasCustomClaim, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
+import { AngularFireAuthGuard, hasCustomClaim, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
 
 // const adminOnly = () => hasCustomClaim('admin');
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['auth/login']);
@@ -11,17 +11,17 @@ const routes: Routes = [
   {
     path: 'auth',
     loadChildren: './auth/auth.module#AuthModule',
-    canActivate: [AngularFireAuthGuard], 
-    data: { 
-      authGuardPipe: redirectLoggedInToHome 
+    canActivate: [AngularFireAuthGuard],
+    data: {
+      authGuardPipe: redirectLoggedInToHome
     }
   },
   {
     path: 'home',
     loadChildren: './pages/pages.module#PagesModule',
-    canActivate: [AngularFireAuthGuard], 
-    data: { 
-      authGuardPipe: redirectUnauthorizedToLogin 
+    canActivate: [AngularFireAuthGuard],
+    data: {
+      authGuardPipe: redirectUnauthorizedToLogin
     },
   },
   {

@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
       try {
         const username = this.form.get('username').value;
         const password = this.form.get('password').value;
-        await this.angularAuth.auth.signInWithEmailAndPassword(username,password);
+        await this.angularAuth.auth.signInWithEmailAndPassword(username, password);
         await this.router.navigate([this.returnUrl]);
       } catch (err) {
         this.loginInvalid = true;
