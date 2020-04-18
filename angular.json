@@ -122,8 +122,13 @@
               "devServerTarget": "livros-a-jato:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "livros-a-jato"
 }
