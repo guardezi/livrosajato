@@ -7,11 +7,7 @@ import { MotoristaComponent } from './motorista/motorista.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'cafs',
-  },
-  {
-    path: 'cafs',
-    component: CafsComponent,
+    component: HomeComponent
   },
   {
     path: 'motorista/:id',

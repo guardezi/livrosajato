@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { MotoristaComponent } from './motorista/motorista.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav'
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatExpansionModule,
     MatIconModule,
     MatSliderModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSidenavModule
   ]
 })
 export class PagesModule { }

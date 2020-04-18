@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
   }
 
   async ngOnInit() {
-
+    this.returnUrl = this.route.snapshot.queryParams.returnUrl || '/home';
   }
 
   async onSubmit() {
@@ -38,8 +38,8 @@ export class LoginComponent implements OnInit {
       try {
         const username = this.form.get('username').value;
         const password = this.form.get('password').value;
-        const result = await this.angularAuth.auth.signInWithEmailAndPassword(username,password);
-        console.log(result) 
+        await this.angularAuth.auth.signInWithEmailAndPassword(username,password);
+        await this.router.navigate([this.returnUrl]);
       } catch (err) {
         this.loginInvalid = true;
       }
