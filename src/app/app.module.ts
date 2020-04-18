@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
-import { AngularFirePerformanceModule } from "@angular/fire/performance";
+import { AngularFirePerformanceModule } from '@angular/fire/performance';
 // import { AngularFireAuthModule } from '@angular/fire/auth';
 // import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
