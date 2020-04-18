@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "livros-a-jato": {
+      "hosting": {
+        "livros-a-jato": [
+          "livros-a-jato"
+        ]
+      }
+    }
+  }
+}
