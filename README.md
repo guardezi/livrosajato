@@ -1,4 +1,4 @@
-![Jekyll site CI](https://github.com/guardezi/livrosajato/workflows/Jekyll%20site%20CI/badge.svg)
+[![Codeship Status for guardezi/livrosajato](https://app.codeship.com/projects/8ac0cc00-6386-0138-1450-429705ae51e5/status?branch=master)](https://app.codeship.com/projects/393208)
 
 # LivrosAJato
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
