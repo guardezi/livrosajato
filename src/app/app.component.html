@@ -3,9 +3,12 @@
         <span>Livros a Jato</span>
         <span class="spacer"></span>
 
-        
-        <span>Sair</span>
-        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">exit_to_app</mat-icon>
+
+        <button mat-button *ngIf="isAuth" (click)="logout()">
+            Sair
+            <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">exit_to_app</mat-icon>
+        </button>
+
 
     </mat-toolbar-row>
 </mat-toolbar>
