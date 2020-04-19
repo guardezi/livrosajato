@@ -10,6 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from '../environments/environment';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,10 @@ import { environment } from '../environments/environment';
     AngularFirePerformanceModule,
     AngularFireAuthModule,
     AngularFireAuthGuardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
