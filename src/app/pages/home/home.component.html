@@ -1,10 +1,10 @@
-<p>home works!</p>
-<!-- <mat-sidenav-content>
-  <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p>
-  <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
-  <p>Events:</p>
-  <div class="example-events">
-    <div *ngFor="let e of events">{{e}}</div>
-  </div>
-</mat-sidenav-content> -->
-<!--  -->
+<mat-card class="example-card" *ngFor="let book of books | async">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{book.title}}</mat-card-title>
+    <mat-card-subtitle>{{book.category}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="book.imgUrl" alt="Photo of a book">
+  <mat-card-content>
+    <button mat-raised-button color="primary">Já li</button>
+  </mat-card-content>
